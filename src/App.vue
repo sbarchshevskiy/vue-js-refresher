@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <Top todayDate="Oct 8th, 2021"/>
+    <Bookings v-bind:bookings="bookings"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Top from "./components/Top";
+  import bookingsList from './bookings.json'
+  import Bookings from './components/Bookings'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+
+  export default {
+    name: "App",
+    components: {
+      Top,
+      Bookings
+    },
+    data() {
+      return {
+        bookings: [bookingsList]
+      }
+    },
+    // posted() {
+    //   this.bookings = bookingsList
+    // }
   }
-}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

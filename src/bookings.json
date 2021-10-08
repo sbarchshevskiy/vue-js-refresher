@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "description": "interview",
+    "date": "October 12th, 2021",
+    "time": "1PM",
+    "setReminder": true
+  },
+  {
+    "id": 2,
+    "description": "meeting a client",
+    "date": "October 13th, 2021",
+    "time": "11AM",
+    "setReminder": true
+  },
+  {
+    "id": 3,
+    "description": "Group bike ride",
+    "date": "October 13th, 2021",
+    "time": "2PM",
+    "setReminder": false
+  },
+  {
+    "id": 4,
+    "description": "follow up with client",
+    "date": "October 14th, 2021",
+    "time": "9AM",
+    "setReminder": true
+  },
+  {
+    "id": 5,
+    "description": "go vote",
+    "date": "November 7th, 2021",
+    "time": "any",
+    "setReminder": true
+  }
+]
